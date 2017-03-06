@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +7,7 @@
     <!-- Bootstrap 3 -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <style type="text/css" media="screen">
         body {
@@ -61,7 +60,7 @@
         // Start playing the video whenever the trailer modal is opened
         $(document).on('click', '.movie-tile', function (event) {
             var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
-            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
+            var sourceUrl = 'https://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
             $("#trailer-video-container").empty().append($("<iframe></iframe>", {
               'id': 'trailer-video',
               'type': 'text-html',
@@ -103,37 +102,36 @@
       </div>
     </div>
     <div class="container">
-      
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="MxqsmsA8y5k" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/2/2d/Harry_Potter_and_the_Deathly_Hallows_%E2%80%93_Part_1.jpg" width="220" height="342">
-    <h2>Harry Potter and the Deathly Hallows, Part 1</h2>
-</div>
-
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="vOIYaRb6XpQ" data-toggle="modal" data-target="#trailer">
-    <img src="http://www.standbyformindcontrol.com/wp-content/uploads/2013/05/khan-poster.jpg" width="220" height="342">
-    <h2>Star Trek II: The Wrath of Khan</h2>
-</div>
-
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="N1XmtdMZdL8" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Star_Trek_Insurrection.png/220px-Star_Trek_Insurrection.png" width="220" height="342">
-    <h2>Star Trek: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Insurrection</h2>
-</div>
-
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="hpazy0BHzxY" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/1/1b/Avengers_Age_of_Ultron.jpg" width="220" height="342">
-    <h2>Avengers: Age of Ultron</h2>
-</div>
-
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="JerVrbLldXw" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/3/37/Captain_America_The_First_Avenger_poster.jpg" width="220" height="342">
-    <h2>Captain America, The First Avenger</h2>
-</div>
-
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="m8e-FF8MsqU" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg" width="220" height="342">
-    <h2>The Matrix</h2>
-</div>
-
+        <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="MxqsmsA8y5k" data-toggle="modal" data-target="#trailer">
+            <img src="https://upload.wikimedia.org/wikipedia/en/2/2d/Harry_Potter_and_the_Deathly_Hallows_%E2%80%93_Part_1.jpg" width="220" height="342">
+            <h2>Harry Potter and the Deathly Hallows, Part 1</h2>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="vOIYaRb6XpQ" data-toggle="modal" data-target="#trailer">
+            <img src="http://www.standbyformindcontrol.com/wp-content/uploads/2013/05/khan-poster.jpg" width="220" height="342">
+            <h2>Star Trek II: The Wrath of Khan</h2>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="N1XmtdMZdL8" data-toggle="modal" data-target="#trailer">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Star_Trek_Insurrection.png/220px-Star_Trek_Insurrection.png" width="220" height="342">
+            <h2>Star Trek: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Insurrection</h2>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="hpazy0BHzxY" data-toggle="modal" data-target="#trailer">
+            <img src="https://upload.wikimedia.org/wikipedia/en/1/1b/Avengers_Age_of_Ultron.jpg" width="220" height="342">
+            <h2>Avengers: Age of Ultron</h2>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="JerVrbLldXw" data-toggle="modal" data-target="#trailer">
+            <img src="https://upload.wikimedia.org/wikipedia/en/3/37/Captain_America_The_First_Avenger_poster.jpg" width="220" height="342">
+            <h2>Captain America, The First Avenger</h2>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="m8e-FF8MsqU" data-toggle="modal" data-target="#trailer">
+            <img src="https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg" width="220" height="342">
+            <h2>The Matrix</h2>
+        </div>
     </div>
   </body>
 </html>
+
